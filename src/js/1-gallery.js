@@ -1,1 +1,1 @@
-export const taskTitle = 'Hi, 1-galery.js';
+export const taskTitle1 = 'Hi, 1-galery.js';
