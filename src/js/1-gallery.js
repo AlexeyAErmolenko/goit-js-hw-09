@@ -23,9 +23,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
-
-// const colorOverlay = lightbox.elements('.sl-overlay');
-// console.dir(lightbox.);
-
-// console.log(lightbox.getAttribute('alt')); // "Rocks and waterfall"
-// image.setAttribute('alt', 'Amazing nature');
