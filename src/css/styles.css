@@ -7,12 +7,146 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./badges.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  margin: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  max-width: 1128px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+
+.gallery-link:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+/* form */
+.feedback-form {
+  margin: auto;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form label {
+  /* padding-bottom: 8px; */
+  width: 360px;
+  /* height: 72px; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label input {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+label input:hover {
+  border-color: #000;
+}
+
+label input:active {
+  border-color: #808080;
+}
+
+
+
+label textarea {
+  resize: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  height: 80px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+label textarea:hover {
+  border-color: #000;
+}
+
+label textarea:active {
+  border-color: #808080;
+}
+
+.feedback-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  /* height: 40px; */
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.feedback-form button:hover {
+  background: #6c8cff;
+}
